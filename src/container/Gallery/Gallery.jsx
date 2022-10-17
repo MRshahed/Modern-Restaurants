@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import {images} from "../../constants";
 import {SubHeading} from "../../components";
@@ -12,10 +12,10 @@ const Gallery = () =>
    const {current} = scrollRef;
 
      if(direction === "left"){
-      current.scrollRef -= 300;
+      current.scrollLeft -= 300;
      }
      else{
-      current.scrollRef += 300;
+      current.scrollLeft += 300;
      }
  }
 return (
@@ -40,8 +40,8 @@ return (
     </div>
 
     <div className='app_gallery-images_arrow'>
-      <BsArrowLeftShort className='gallery__arrow-icon' onClick={()=> scroll("left")}/>
-      <BsArrowRightShort className='gallery__arrow-icon' onClick={()=> scroll("right")}/>
+      <BsArrowLeftShort className='gallery_arrow-icon' onClick={()=> scroll("left")}/>
+      <BsArrowRightShort className='gallery_arrow-icon' onClick={()=> scroll("right")}/>
     </div>
   </div>
   </div>
