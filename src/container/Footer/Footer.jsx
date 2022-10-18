@@ -1,10 +1,55 @@
-import React from 'react';
-
-import './Footer.css';
-
+import React from "react";
+import { FooterOverlay, Newsletter } from "../../components";
+import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { images } from "../../constants";
+import "./Footer.css";
 const Footer = () => (
-  <div>
-    Footer
+  <div className="app_footer section__padding" id="footer">
+    <FooterOverlay />
+    <Newsletter />
+
+    <div className="app_footer-links">
+      <div className="app_footer-links_contact">
+        <h1 className="app_footer-headtext"> Contact Us</h1>
+        <p className="p__opensans">9 W 53rd St, New York, NY 10019, USA</p>
+        <p className="p__opensans">+1 212-344-1230</p>
+        <p className="p__opensans">+1 212-555-1230</p>
+      </div>
+
+      <div className="app_footer-links_logo">
+        <img src={images.gericht_golden} alt="footer logo" />
+        <p className="p__opensans">
+          "The best way to find yourself is to lose yourself in the service of
+          others.”
+        </p>
+        <img
+          src={images.spoon}
+          alt="spoon"
+          className="spoon__img"
+          style={{ marginTop: 15 }}
+        />
+        <div className="app_footer-links_icon">
+          <FiFacebook />
+          <FiInstagram />
+          <FiTwitter />
+        </div>
+      </div>
+
+      <div className="app_footer-links_works">
+        <div className="app_footer-links_contact">
+          <h1 className="app_footer-headtext"> Working Hours</h1>
+          <p className="p__opensans">Monday-Friday:</p>
+          <p className="p__opensans">08:00 am -12:00 am</p>
+          <p className="p__opensans">Saturday-Sunday:</p>
+          <p className="p__opensans">07:00am -11:00 pm</p>
+        </div>
+      </div>
+    </div>
+    <div className="footer__copyright">
+      <p className="p__opensans" style={{ color: "#AAAAAA" }}>
+        ©2022 Shahed Hossen.
+      </p>
+    </div>
   </div>
 );
 

@@ -1,3 +1,4 @@
+import ScrollTop from '../components/ScrollTop/ScrollTop';
 import AboutUs from './AboutUs/AboutUs';
 import Chef from './Chef/Chef';
 import FindUs from './Findus/FindUs';
@@ -18,4 +19,5 @@ export {
   Intro,
   Laurels,
   SpecialMenu,
+  ScrollTop,
 };

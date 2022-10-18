@@ -1,0 +1,9 @@
+.app__scrollButton{
+position: fixed;
+bottom: 5px;
+right: 7px;
+z-index: 50;
+cursor: pointer;
+font-size: 30px;
+background-color: var(--color-white);
+}

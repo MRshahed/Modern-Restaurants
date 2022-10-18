@@ -17,11 +17,12 @@ const MenuItem = ({ title, price, tags }) => (
         <p className="p__cormorant">{price}</p>
       </div>
     </div>
-     
-     <div className="app_menuitem-tags">
-      <p className="p__opensans" style={{color:'#AAA'}}>{tags}</p>
-     </div>
 
+    <div className="app_menuitem-tags">
+      <p className="p__opensans" style={{ color: "#AAA" }}>
+        {tags}
+      </p>
+    </div>
   </div>
 );
 

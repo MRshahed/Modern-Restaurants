@@ -1,14 +1,14 @@
 @import "../../index.css";
 
-.app_header{
-    background: var(--color-black);
+.app_header {
+  background: var(--color-black);
 }
 
-.app_header-h1{
-    font-family: var(--font-base);
-    color: var(--color-golden);
-    letter-spacing: 0.04em;
- 
-    line-height: 117px;
-    font-size: 90px;
+.app_header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.04em;
+
+  line-height: 117px;
+  font-size: 90px;
 }
