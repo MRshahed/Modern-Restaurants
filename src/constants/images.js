@@ -23,7 +23,10 @@ import gericht from '../assets/gericht.png';
 import gericht_golden from "../assets/gericht_golden.png"
 import UpArrow from "../assets/UpArrow.png";
 
-export default {
+
+
+
+const images =  {
   bg,
   chef,
   G,
@@ -49,3 +52,5 @@ export default {
   gericht_golden,
   UpArrow,
 };
+
+export default images;
