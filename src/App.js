@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 
 import {
   AboutUs,
@@ -16,6 +16,7 @@ import "./App.css";
 
 const App = () => (
   <div className="app_body">
+  <StrictMode >
     <Navbar />
     <Header />
     <AboutUs />
@@ -26,6 +27,7 @@ const App = () => (
     <Gallery />
     <FindUs />
     <Footer />
+</StrictMode>
   </div>
 );
 
