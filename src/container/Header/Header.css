@@ -12,3 +12,18 @@
   line-height: 117px;
   font-size: 90px;
 }
+
+@media screen and (max-width: 650px) {
+  .app_header-h1{
+    font-size: 65px;
+    line-height: 80px;
+    letter-spacing: normal;
+  }
+}
+@media screen and (max-width: 360px) {
+  .app_header-h1{
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: normal;
+  }
+}
